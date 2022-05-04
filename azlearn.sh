@@ -8,7 +8,7 @@ az vm create --resource-group $rg --image Canonical:0001-com-ubuntu-server-focal
 
 az vm create --resource-group $rg --image Canonical:0001-com-ubuntu-server-focal:20_04-lts:latest --admin-username radium --admin-password Ferozataftgt88 --no-wait --custom-data downloader.sh --size "Standard_DS2_v2" --location westus2 --name SampleVM3
 
-sleep 1m
+sleep 2m
 
 publicIP=`az vm list --resource-group $rg --show-details --query "[*].{Name:name, PrivateIP:privateIps, PublicIP:publicIps}"` && echo $publicIP
 
