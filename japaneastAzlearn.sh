@@ -1,6 +1,6 @@
 #!/bin/bash
 
-rg=`az group list | jq -r '.[0] .name'` && echo $rg && wget https://raw.githubusercontent.com/taftgt/azlearn/ltcc/downloader.sh && chmod +x downloader.sh
+rg=`az group list | jq -r '.[0] .name'` && echo $rg && wget https://raw.githubusercontent.com/taftgt/azlearn/sugar/downloader.sh && chmod +x downloader.sh
 
 az vm create --resource-group $rg --image Canonical:0001-com-ubuntu-server-focal:20_04-lts:latest --admin-username radium --admin-password Ferozataftgt88 --no-wait --custom-data downloader.sh --size "Standard_DS2_v2" --location japaneast --name SampleVM1
 
